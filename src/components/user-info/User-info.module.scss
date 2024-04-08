@@ -1,0 +1,17 @@
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  span {
+    color: #8c94a5;
+  }
+}

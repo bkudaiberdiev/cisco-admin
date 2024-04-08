@@ -1,0 +1,36 @@
+.input__field {
+  margin-bottom: 16px;
+  width: 100%;
+  &_label {
+    display: block;
+    margin-bottom: 4px;
+    color: #2E2E2E;
+    opacity: 0.5;
+    font-weight: 300;
+  }
+  input {
+    border: 1px solid rgba(45, 30, 113, 0.2);
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+    padding: 0 14px;
+  }
+
+  &_password {
+    border: 1px solid rgba(45, 30, 113, 0.2);
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    img {
+      width: 20px;
+      height: 20px;
+
+    }
+    input {
+      border: none;
+      height: 100%;
+    }
+  }
+}

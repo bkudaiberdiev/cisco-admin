@@ -1,0 +1,51 @@
+.signin {
+  display: flex;
+  height: 100vh;
+
+  &__form_wrapper {
+    height: 100%;
+    width: 50%;
+    display: flex;
+
+    form {
+      margin: auto;
+      width: 304px;
+
+      h2 {
+        color: #472F91;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  &__image{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background: #472F91;
+
+    img {
+      width: 328px;
+      margin: auto
+    }
+  }
+  &__btn {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  &__password_input {
+    border: 1px solid rgba(45, 30, 113, 0.2);
+    border-radius: 8px;
+    input {
+      border: none;
+    }
+  }
+  &__has_account {
+    color: #2E2E2E;
+    font-weight: 300;
+    a {
+      color: #472f91;
+      text-decoration: none;
+    }
+  }
+}
