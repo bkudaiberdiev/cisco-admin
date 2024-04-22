@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "antd": "^5.16.1",
+    "antd-img-crop": "^4.21.0",
     "bootstrap": "^5.3.3",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "node-sass": "^9.0.0",

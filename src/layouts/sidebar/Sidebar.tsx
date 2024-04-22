@@ -32,7 +32,7 @@ function Sidebar() {
       <div className={classes.sidebar__header}>Cisco Edu</div>
       <ul>
         {links.map((link) => (
-          <li aria-hidden onClick={() => navigate(link.href)}>
+          <li key={link.href} aria-hidden onClick={() => navigate(link.href)}>
             <span>{link.text}</span>
             <img src={arrowRightSVG} alt="" />
           </li>

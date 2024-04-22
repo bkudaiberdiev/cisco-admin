@@ -8,7 +8,7 @@ function UserInfo({ width, height }: { width: number; height: number }) {
       <img style={{ width, height }} src={avatarSVG} alt="" />
       <div>
         <h3>Бектемир Кудайбердиев</h3>
-        <span>Студент</span>
+        <span>Админ</span>
       </div>
     </div>
   );

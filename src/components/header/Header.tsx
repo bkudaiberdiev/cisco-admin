@@ -16,7 +16,7 @@ function Header() {
           Выйти
         </li>
       </ul>
-      <span className={classes.powered}>Powered by Cisco</span>
+      <span className={classes.powered}>Powered by Cisco 2024</span>
     </div>
   );
   return (

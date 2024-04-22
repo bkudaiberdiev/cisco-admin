@@ -29,7 +29,7 @@ function Button({
       type="button"
       {...props}
     >
-      {text} {img && img}
+      {text} {img && <img src={img} alt="" />}
     </button>
   );
 }

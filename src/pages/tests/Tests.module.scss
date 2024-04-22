@@ -1,0 +1,63 @@
+.tests {
+  padding: 30px;
+
+  &__form {
+    display: flex;
+    align-items: flex-end;
+    gap:16px;
+    margin-bottom: 20px;
+
+    label {
+      margin-bottom: 0;
+      width: 331px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &__list {
+    width: 50%;
+    &_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      cursor:pointer;
+
+      span {
+        &:first-child {
+          &:hover {
+            color: #472F91;
+          }
+        }
+        &:last-child {
+          color: red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__subjects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-height: calc(100vh - 515px);
+    overflow: auto;
+    label {
+      width: 331px;
+    }
+    button {
+      background: #fff;
+      margin-left: 14px;
+      box-shadow: 0px 2px 8px 0px #0000001F;
+
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}
