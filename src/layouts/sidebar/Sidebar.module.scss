@@ -1,17 +1,15 @@
 .sidebar {
   width: 250px;
   height: 100vh;
-  background: #25262c;
+  background: var(--dark-gray, rgba(64, 64, 64, 1));
   box-shadow: 0px 2px 12px 0px #00000012;
   &__header {
-    height: 60px;
-    background: #3b3b45;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    img {
+      width: 150px;
+    }
   }
   ul {
     li {
@@ -22,11 +20,12 @@
       justify-content: space-between;
       cursor: pointer;
       color: rgba(255,255,255, .7);
-      &:first-child {
-        background: #3b3b45;
+      &.active {
+        background: var(--dark-gray, rgba(255,255, 255, 0.1));
+        color: #fff;
       }
       &:hover {
-        background: #3b3b45;
+        background: var(--dark-gray, rgba(255,255, 255, 0.1));
         color: #fff;
       }
     }
