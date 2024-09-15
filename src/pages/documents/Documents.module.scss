@@ -1,0 +1,46 @@
+.documents {
+  margin-top: 30px;
+  &__add {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 30px;
+    label {
+      margin-bottom: 0;
+    }
+  }
+  &__file {
+    input {
+      display: none;
+    }
+  }
+  &__table {
+    &_header {
+      text-transform: uppercase;
+      background: var(--white, rgba(250, 250, 250, 1));
+      padding: 15px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    &_header, &_body {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    &_body {
+      height: 40px;
+      padding: 0 15px;
+      align-items: center;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 10px;
+
+      button {
+        text-transform: capitalize;
+        border-radius: 50px;
+        background: lightsalmon;
+      }
+    }
+  }
+}

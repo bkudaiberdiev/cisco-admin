@@ -5,12 +5,14 @@ import classes from "./Fields.module.scss";
 export interface IInputFieldProps {
   id?: string;
   placeholder?: string;
+  name?: string;
   label?: string;
-  value?: string;
+  value?: string | number;
   type?: string;
   className?: string;
   disabled?: boolean;
   onChange?: (e: any) => void;
+  required?: boolean;
 }
 function InputField({
   id,
@@ -21,6 +23,8 @@ function InputField({
   className,
   disabled,
   onChange,
+  name,
+  required,
   ...inputProps
 }: IInputFieldProps) {
   const [isPasswordShow, setIsPasswordShow] = useState<boolean>(false);
@@ -35,6 +39,8 @@ function InputField({
             onChange={onChange}
             disabled={disabled}
             type={isPasswordShow ? "text" : "password"}
+            name={name}
+            required={required}
             {...inputProps}
           />
           <img
@@ -46,10 +52,12 @@ function InputField({
         </div>
       ) : (
         <input
+          required={required}
           value={value}
           placeholder={placeholder}
           onChange={onChange}
           disabled={disabled}
+          name={name}
           type={type}
           {...inputProps}
         />

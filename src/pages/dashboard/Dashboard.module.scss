@@ -1,0 +1,39 @@
+.dashboard {
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &__documents {
+    position: relative;
+    &_header{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      h5 {
+        font-size: 16px;
+      }
+    }
+    &_body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  }
+  &_btn {
+    border-radius: 16px;
+    text-transform: capitalize;
+    position: absolute;
+    right: 20px;
+    top: 24px;
+  }
+  &__news {
+    margin-bottom: 10px;
+    h4 {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
